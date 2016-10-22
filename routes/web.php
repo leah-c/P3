@@ -35,7 +35,7 @@ Route::get('/generate_ipsum', function () {
     $msg .= '[ ] Create blurb for ipsum generator</br>';
     $msg .= '[ ] Create form options for ipsum generator</br>';
     $msg .= '[ ] Determine how to display results from ipsum generator</br>';
-    $msg .= '[ ] Install ipsum generator package</br>';
+    $msg .= '[ ] Install ipsum generator package</br></br>';
 
     $view = '<form method = "POST" action = "/generate_ipsum">';
     $view .= csrf_field(); # This will be explained more later
@@ -58,7 +58,17 @@ Route::get('/generate_users', function () {
     $msg .= '[ ] Create blurb for random user generator</br>';
     $msg .= '[ ] Create form options for random user generator</br>';
     $msg .= '[ ] Determine how to display results from random user generator</br>';
-    $msg .= '[ ] Install random user package</br>';
+    $msg .= '[ ] Install random user package</br></br>';
 
-    return $msg;
+    $view = '<form method = "POST" action = "/generate_users">';
+    $view .= csrf_field(); # This will be explained more later
+    $view .=  '<label>Number of Users: <input type = "text" name ="num users">';
+    $view .=  '<input type = "submit">';
+    $view .= '</form>';
+
+    return $msg . $view;
+});
+
+Route::post('/generate_users', function () {
+    return 'Users generated.';
 });
