@@ -37,9 +37,18 @@ Route::get('/generate_ipsum', function () {
     $msg .= '[ ] Determine how to display results from ipsum generator</br>';
     $msg .= '[ ] Install ipsum generator package</br>';
 
-    return $msg;
+    $view = '<form method = "POST" action = "/generate_ipsum">';
+    $view .= csrf_field(); # This will be explained more later
+    $view .=  '<label>Number of Paragraphs: <input type = "text" name ="num paragrphs">';
+    $view .=  '<input type = "submit">';
+    $view .= '</form>';
+
+    return $msg . $view;
 });
 
+Route::post('/generate_ipsum', function () {
+    return 'Ipsum generated.';
+});
 
 Route::get('/generate_users', function () {
     //return view('welcome');
