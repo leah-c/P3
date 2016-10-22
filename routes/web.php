@@ -66,7 +66,7 @@ Route::post('/generate_ipsum', function () {
 });
 
 # Direct user to the user generator landing page using IpsumController
-Route::get('/generate_users', 'IpsumController@index')->name('gen_user.index');
+Route::get('/generate_users', 'UserController@index')->name('gen_user.index');
 
 #OLD
 # Directs user to the landing page of the random user generator
