@@ -34,7 +34,7 @@ Route::get('/', function () {
 */
 
 # Direct user to the landing page using IpsumController
-Route::get('/generate_ipsum','IpsumController@index');
+Route::get('/generate_ipsum', 'IpsumController@index');
 # Directs user to the landing page of the random ipsum generator
 /*Route::get('/generate_ipsum', function () {
     //return view('welcome');
