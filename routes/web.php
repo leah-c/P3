@@ -11,10 +11,11 @@
 |
 */
 
-# Direct user to the landing page using IpsumController
-Route::get('/', 'IpsumController@index');
+# Direct user to the landing page introducing both tools using IpsumController
+Route::get('/', 'IpsumController@index')->name('generator.index');
 
-# Directs user to the landing page
+#OLD
+# Directs user to the landing page introducing both tools
 /*
 Route::get('/', function () {
     //return view('welcome');
@@ -33,10 +34,13 @@ Route::get('/', function () {
 });
 */
 
-# Direct user to the landing page using IpsumController
-Route::get('/generate_ipsum', 'IpsumController@index');
+# Direct user to the ipsum generator landing page using IpsumController
+Route::get('/generate_ipsum', 'IpsumController@index')->name('gen_ipsum.index');
+
+#OLD
 # Directs user to the landing page of the random ipsum generator
-/*Route::get('/generate_ipsum', function () {
+/*
+Route::get('/generate_ipsum', function () {
     //return view('welcome');
     $msg = '<h1>Ipsum Generator</h1></br>';
 
@@ -61,7 +65,12 @@ Route::post('/generate_ipsum', function () {
     return 'Ipsum generated.';
 });
 
+# Direct user to the user generator landing page using IpsumController
+Route::get('/generate_users', 'IpsumController@index')->name('gen_user.index');
+
+#OLD
 # Directs user to the landing page of the random user generator
+/*
 Route::get('/generate_users', function () {
     //return view('welcome');
     $msg = '<h1>Random Users Generator</h1></br>';
@@ -80,6 +89,7 @@ Route::get('/generate_users', function () {
 
     return $msg . $view;
 });
+*/
 
 # Directs user to the confirmation page of the random user generator
 Route::post('/generate_users', function () {
