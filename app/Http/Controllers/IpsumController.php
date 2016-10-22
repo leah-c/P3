@@ -15,8 +15,8 @@ class IpsumController extends Controller
      */
     public function index()
     {
-        //return 'Hi from the IpsumController!!';
-        return view('welcome');
+        return 'Hi from the IpsumController!';
+        //return view('welcome');
     }
 
     /**
