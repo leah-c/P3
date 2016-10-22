@@ -11,6 +11,7 @@
 |
 */
 
+# Directs user to the landing page
 Route::get('/', function () {
     //return view('welcome');
     $msg = '<h1>You are on the landing page.</h1></br>';
@@ -27,6 +28,7 @@ Route::get('/', function () {
 
 });
 
+# Directs user to the landing page of the random ipsum generator
 Route::get('/generate_ipsum', function () {
     //return view('welcome');
     $msg = '<h1>Ipsum Generator</h1></br>';
@@ -46,10 +48,12 @@ Route::get('/generate_ipsum', function () {
     return $msg . $view;
 });
 
+# Directs user to the confirmation page of the random user generator
 Route::post('/generate_ipsum', function () {
     return 'Ipsum generated.';
 });
 
+# Directs user to the landing page of the random user generator
 Route::get('/generate_users', function () {
     //return view('welcome');
     $msg = '<h1>Random Users Generator</h1></br>';
@@ -69,6 +73,7 @@ Route::get('/generate_users', function () {
     return $msg . $view;
 });
 
+# Directs user to the confirmation page of the random user generator
 Route::post('/generate_users', function () {
     return 'Users generated.';
 });
