@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+#use \Badcow\LoremIpsum;
 
 class IpsumController extends Controller
 {
@@ -39,7 +40,10 @@ class IpsumController extends Controller
     public function store(Request $request)
     {
       //dump($request);
-      return $request->input('numParagraphs');
+      $input = $request->input('numParagraphs');
+      $generator = new \Badcow\LoremIpsum\Generator();
+      $paragraphs = $generator->getParagraphs($input);
+      echo implode('<p>', $paragraphs);
     }
 
     /**
