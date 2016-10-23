@@ -23,7 +23,7 @@ such as a page specific stylesheets.
 
     <form method = "POST" action = "/generate_users" >
       {{ csrf_field() }}
-      <label>Number of Users: <input type = "text" name ="numUsers" placeholder="Number of Users (Max 99)" maxlength = "2"></label>
+      <label>Number of Users: <input type = "text" name ="numUsers" placeholder=" ( Max 99 )" maxlength = "2"></label>
       <input type = "submit">
     </form>
 

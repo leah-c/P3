@@ -23,7 +23,7 @@ such as a page specific stylesheets.
 
   <form method = "POST" action = "/generate_ipsum">
     {{ csrf_field() }}
-    <label>Number of Paragraphs: <input type = "text" name ="numParagraphs" placeholder="Number of Paragraphs (Max)" maxlength = "2"></label>
+    <label>Number of Paragraphs: <input type = "text" name ="numParagraphs" placeholder=" (Max 50 ) " maxlength = "2"></label>
     <input type = "submit">
   </form>
 
@@ -33,7 +33,7 @@ such as a page specific stylesheets.
             <li>{{ $error }}</li>
         @endforeach
     </ul>
-@endif
+  @endif
 @endsection
 
 
