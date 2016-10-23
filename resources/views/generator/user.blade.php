@@ -27,6 +27,14 @@ such as a page specific stylesheets.
       <input type = "submit">
     </form>
 
+    @if($errors->get('numUsers'))
+      <ul>
+          @foreach($errors->get('numUsers') as $error)
+              <li>{{ $error }}</li>
+          @endforeach
+      </ul>
+    @endif
+
 @endsection
 
 {{--
