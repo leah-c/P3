@@ -53,11 +53,11 @@ such as a page specific stylesheets.
       <ul><h1>Validation/ Error Messages</h1>
         <li>[ x ] Test link to user generator </li>
         <li>[   ] Create Laravel Validation rules for user generator </li>
-        <li>[   ] Test random user generator package </li>
+        <li>[ x ] Test random user generator package </li>
 
         <li>[ x ] Test link to ipsum generator </li>
         <li>[   ] Create Laravel Validation rules for ipsum generator </li>
-        <li>[   ] Test ipsum generator package </li>
+        <li>[ x ] Test ipsum generator package </li>
       </ul>
     </li>
 
