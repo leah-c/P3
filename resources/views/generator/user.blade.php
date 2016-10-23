@@ -21,9 +21,9 @@ such as a page specific stylesheets.
   <h1>You are on the Random User Generator landing page.</h1>
   <p>The Random User Generator tool will give you some dummy user names (i.e. Lisa Frank).</p>
 
-    <form method = "POST" action = "/generate_users">
+    <form method = "POST" action = "/generate_users" >
       {{ csrf_field() }}
-      <label>Number of Users: <input type = "text" name ="num users"></label>
+      <label>Number of Users: <input type = "text" name ="num users" placeholder="Number of Users (Max 99)" maxlength = "2"></label>
       <input type = "submit">
     </form>
 
