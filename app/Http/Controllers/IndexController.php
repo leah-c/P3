@@ -15,7 +15,7 @@ class IndexController extends Controller
      */
     public function index()
     {
-      return view('layouts\gen_home');
+      return view('\layouts\gen_home');
     }
 
     /**
