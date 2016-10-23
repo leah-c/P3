@@ -19,14 +19,12 @@ such as a page specific stylesheets.
 @section('content')
 
   <h1>You are on the Random User Generator landing page.</h1>
+  <p>The Random User Generator tool will give you some dummy user names (i.e. Lisa Frank).</p>
 
-  {{--
-    $view = '<form method = "POST" action = "/generate_ipsum">';
-    $view .= csrf_field(); # This will be explained more later
-    $view .=  '<label>Number of Paragraphs: <input type = "text" name ="num paragrphs">';
-    $view .=  '<input type = "submit">';
-    $view .= '</form>';
-  }}
+    <form method = "POST" action = "/generate_users">
+      <label>Number of Users: <input type = "text" name ="num users"></label>
+      <input type = "submit">
+    </form>
 
 @stop
 
