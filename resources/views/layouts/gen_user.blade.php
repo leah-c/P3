@@ -20,13 +20,6 @@ such as a page specific stylesheets.
 
   <h1>You are on the Random User Generator landing page.</h1>
 
-  <ul><h2>TO DOs</h2>
-     <li>[ ] Create blurb for ipsum generator</li>
-     <li>[ ] Create form options for ipsum generator </li>
-     <li>[ ] Determine how to display results from ipsum generator </li>
-     <li>[ ] Install ipsum generator package</br> </li>
-  </ul>
-
   {{--
     $view = '<form method = "POST" action = "/generate_ipsum">';
     $view .= csrf_field(); # This will be explained more later
