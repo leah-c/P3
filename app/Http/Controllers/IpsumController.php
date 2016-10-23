@@ -16,8 +16,8 @@ class IpsumController extends Controller
     public function index()
     {
         //return 'Hi from the IpsumController!';
-        return view('\layouts\gen_ipsum');
-        
+        return view('generator.ipsum');
+
     }
 
     /**
