@@ -18,14 +18,13 @@ such as a page specific stylesheets.
 
 @section('content')
   <h1>You are on the Lorem Ipsum Generator landing page.</h1>
+  <p>The Lorem Ipsum Text Generator tool will give you some dummy text. Just enter the
+  number of paragraphs of text you'd like to have!</p>
 
- {{--
-   $view = '<form method = "POST" action = "/generate_users">';
-   $view .= csrf_field(); # This will be explained more later
-   $view .=  '<label>Number of Users: <input type = "text" name ="num users">';
-   $view .=  '<input type = "submit">';
-   $view .= '</form>';
- }}
+  <form method = "POST" action = "/generate_ipsum">
+    <label>Number of Paragraphs: <input type = "text" name ="num paragraphs"></label>
+    <input type = "submit">
+  </form>
 @stop
 
 
