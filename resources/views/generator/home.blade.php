@@ -82,6 +82,8 @@ such as a page specific stylesheets.
         <li>[   ] Incorporate password generator from P2 </li>
         <li>[   ] Create link to password generator on home page</li>
         <li>[   ] Determine how to display results from password generator </li>
+        <li>[   ] Create a clipboard function for easier copying </li>
+
       </ul>
     </li>
   </ul>
