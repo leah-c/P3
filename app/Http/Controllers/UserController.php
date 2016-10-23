@@ -37,7 +37,13 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-      return 'UserController store...users generated..';
+      dump($request);
+      $input = $request->input('numUsers');
+      $faker = \Faker\Factory::create();
+
+      for ($i=0; $i < $input; $i++) {
+        echo $faker->name, "</br>";
+      }
     }
 
     /**
