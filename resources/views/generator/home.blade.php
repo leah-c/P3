@@ -24,16 +24,18 @@ such as a page specific stylesheets.
   <h2>Lorem Ipsum Text Generator</h2>
   <p>The Lorem Ipsum Text Generator tool will give you some dummy text. Just enter the
   number of paragraphs of text you'd like to have!</p>
+  <a href ="generate_ipsum">Let's generate some lorem ipsum text!</a>
 
   <h2>Random user Generator</h2>
   <p>The Random User Generator tool will give you some dummy user names (i.e. Lisa Frank).</p>
+  <a href ="generate_users">Let's get some random user names!</a>
 
   <ul><h2>TO DOs</h2>
     <li>
       <ul><h1>Ipsum Generator</h1>
         <li>[ x ] Create blurb for ipsum generator</li>
         <li>[ ] Determine how to display results from ipsum generator </li>
-        <li>[ ] Create link to ipsum generator from home page</li>
+        <li>[ x ] Create link to ipsum generator from home page</li>
         <li>[ x ] Install ipsum generator package </li>
       </ul>
     </li>
@@ -41,7 +43,7 @@ such as a page specific stylesheets.
     <li>
       <ul><h1>User Generator</h1>
         <li>[ x ] Create blurb for random user generator</li>
-        <li>[ ] Create link to user generator from home page</li>
+        <li>[ x ] Create link to user generator from home page</li>
         <li>[ ] Determine how to display results from user generator </li>
         <li>[ ] Install random user generator package </li>
       </ul>
