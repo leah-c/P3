@@ -2,7 +2,7 @@
 
 
 @section('title')
-    Show book
+    Generate Random Users
 @stop
 
 

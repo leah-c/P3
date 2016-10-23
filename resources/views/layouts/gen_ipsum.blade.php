@@ -2,7 +2,7 @@
 
 
 @section('title')
-    Generate Lorem Ipsum
+    Generate Lorem Ipsum Text
 @stop
 
 

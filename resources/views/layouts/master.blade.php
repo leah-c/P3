@@ -3,7 +3,7 @@
 <head>
     <title>
         {{-- Yield the title if it exists, otherwise default to 'Foobooks' --}}
-        @yield('title','Foobooks')
+        @yield('title','Web Dev Generator Tools Home')
     </title>
 
     <meta charset='utf-8'>

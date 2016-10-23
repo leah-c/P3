@@ -2,7 +2,7 @@
 
 
 @section('title')
-    Show book
+    Web Dev Generator Tools Home
 @stop
 
 
