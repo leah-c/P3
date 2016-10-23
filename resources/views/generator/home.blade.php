@@ -24,11 +24,11 @@ such as a page specific stylesheets.
   <h2>Lorem Ipsum Text Generator</h2>
   <p>The Lorem Ipsum Text Generator tool will give you some dummy text. Just enter the
   number of paragraphs of text you'd like to have!</p>
-  <a href ="generate_ipsum">Let's generate some lorem ipsum text!</a>
+  <a href ="generate_ipsum"><input type="button" value="Let's generate some lorem ipsum text!"></a>
 
   <h2>Random user Generator</h2>
   <p>The Random User Generator tool will give you some dummy user names (i.e. Lisa Frank).</p>
-  <a href ="generate_users">Let's get some random user names!</a>
+  <a href ="generate_users"><input type="button" value="Let's get some random user names!"></a>
 
   <ul><h2>TO DOs</h2>
     <li>
