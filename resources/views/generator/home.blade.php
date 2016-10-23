@@ -52,11 +52,13 @@ such as a page specific stylesheets.
     <li>
       <ul><h1>Validation/ Error Messages</h1>
         <li>[ x ] Test link to user generator </li>
-        <li>[   ] Create Laravel Validation rules for user generator </li>
+        <li>[ x ] Create Laravel Validation rules for user generator </li>
+        <li>[   ] Customize error messages for user generator </li>
         <li>[ x ] Test random user generator package </li>
 
         <li>[ x ] Test link to ipsum generator </li>
-        <li>[   ] Create Laravel Validation rules for ipsum generator </li>
+        <li>[ x ] Create Laravel Validation rules for ipsum generator </li>
+        <li>[   ] Customize error messages for ipsum generator </li>
         <li>[ x ] Test ipsum generator package </li>
       </ul>
     </li>
@@ -71,6 +73,8 @@ such as a page specific stylesheets.
     <li>
       <ul><h1>Aesthetics</h1>
         <li>[   ] Make forms look pretty </li>
+        <li>[   ] Make forms look pretty </li>
+        <li>[   ] Add CSS to error messages </li>
         <li>[   ] Add padding between container and fixed navbar </li>
         <li>[   ] Highlight active links, might need to pass param </li>
 
