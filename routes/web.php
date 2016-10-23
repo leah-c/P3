@@ -15,12 +15,6 @@
 Route::get('/', 'GeneratorIndexController@index')->name('gen_home.index');
 
 /*
-Route::get('/ipsum_test', function(){
-  $generator = new Badcow\LoremIpsum\Generator();
-  $paragraphs = $generator->getParagraphs(5);
-  echo implode('<p>', $paragraphs);
-});
-
 Route::get('/user_test', function(){
   $faker = Faker\Factory::create();
   for ($i=0; $i < 10; $i++) {
