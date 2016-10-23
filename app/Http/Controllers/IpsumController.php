@@ -17,6 +17,7 @@ class IpsumController extends Controller
     {
         //return 'Hi from the IpsumController!';
         return view('\layouts\gen_ipsum');
+        
     }
 
     /**
