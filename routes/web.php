@@ -12,7 +12,8 @@
 */
 
 # Direct user to the Generator tools landing page using IpsumController
-Route::get('/', 'IndexController@index')->name('gen_home.index');
+#Route::get('/', 'IndexController@index')->name('gen_home.index');
+Route::get('/', 'GeneratorIndexController@index')->name('gen_home.index');
 
 # Direct user to the ipsum generator landing page using IpsumController
 Route::get('/generate_ipsum', 'IpsumController@index')->name('gen_ipsum.index');
