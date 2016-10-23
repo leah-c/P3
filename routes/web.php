@@ -14,15 +14,6 @@
 # Direct user to the Generator tools landing page using IpsumController
 Route::get('/', 'GeneratorIndexController@index')->name('gen_home.index');
 
-/*
-Route::get('/user_test', function(){
-  $faker = Faker\Factory::create();
-  for ($i=0; $i < 10; $i++) {
-  echo $faker->name, "\n";
-}
-});
-*/
-
 # Direct user to the ipsum generator landing page using IpsumController
 Route::get('/generate_ipsum', 'IpsumController@index')->name('gen_ipsum.index');
 
