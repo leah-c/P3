@@ -17,7 +17,24 @@ such as a page specific stylesheets.
 
 
 @section('content')
-  <p>In gen_ipsum template.</p>
+  <h1>You are on the Lorem Ipsum Generator landing page.</h1>
+
+  <ul><h2>TO DOs</h2>
+    <li>[ ] Create blurb for ipsum generator </li>
+    <li>[ ] Create blurb for random user generator </li>
+    <li>[ ] Create corresponding link to each tool </li>
+
+    <li>[ ] Create page for ipsum generator </li>
+    <li>[ ] Create page for random user generator </li>
+ </ul>
+
+ {{--
+   $view = '<form method = "POST" action = "/generate_users">';
+   $view .= csrf_field(); # This will be explained more later
+   $view .=  '<label>Number of Users: <input type = "text" name ="num users">';
+   $view .=  '<input type = "submit">';
+   $view .= '</form>';
+ }}
 @stop
 
 
