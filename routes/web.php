@@ -33,14 +33,10 @@ Route::get('/user_test', function(){
 Route::get('/generate_ipsum', 'IpsumController@index')->name('gen_ipsum.index');
 
 # Directs user to the confirmation page of the ipsum generator
-Route::post('/generate_ipsum', function () {
-    return 'Ipsum generated..';
-});
+Route::post('/generate_ipsum', 'IpsumController@store')->name('gen_ipsum.store');
 
 # Direct user to the user generator landing page using IpsumController
 Route::get('/generate_users', 'UserController@index')->name('gen_user.index');
 
 # Directs user to the confirmation page of the random user generator
-Route::post('/generate_users', function () {
-    return 'Users generated..';
-});
+Route::post('/generate_users', 'UserController@store')->name('gen_user.store');
