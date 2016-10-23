@@ -22,6 +22,7 @@ such as a page specific stylesheets.
   number of paragraphs of text you'd like to have!</p>
 
   <form method = "POST" action = "/generate_ipsum">
+    {{ csrf_field() }}
     <label>Number of Paragraphs: <input type = "text" name ="num paragraphs"></label>
     <input type = "submit">
   </form>

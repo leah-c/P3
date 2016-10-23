@@ -22,6 +22,7 @@ such as a page specific stylesheets.
   <p>The Random User Generator tool will give you some dummy user names (i.e. Lisa Frank).</p>
 
     <form method = "POST" action = "/generate_users">
+      {{ csrf_field() }}
       <label>Number of Users: <input type = "text" name ="num users"></label>
       <input type = "submit">
     </form>

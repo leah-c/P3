@@ -12,7 +12,7 @@ Use it to add specific things that *this* View needs in the head,
 such as a page specific stylesheets.
 --}}
 @section('head')
-    {{--<link href="/css/books/show.css" type='text/css' rel='stylesheet'>--}}
+
 @stop
 
 
@@ -63,14 +63,17 @@ such as a page specific stylesheets.
 
     <li>
       <ul><h1>Structure</h1>
-        <li>[   ] Create form for ipsum generator </li>
-        <li>[   ] Create form for user generator </li>
+        <li>[ x ] Create form for ipsum generator </li>
+        <li>[ x ] Create form for user generator </li>
       </ul>
     </li>
 
     <li>
       <ul><h1>Aesthetics</h1>
         <li>[   ] Make forms look pretty </li>
+        <li>[   ] Add padding between container and fixed navbar </li>
+        <li>[   ] Highlight active links, might need to pass param </li>
+
       </ul>
     </li>
 
