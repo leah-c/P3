@@ -18,24 +18,36 @@
 
 </head>
 <body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+
+      <ul class="nav nav-pills">
+        <li class="active"><a href="/">Home</a></li>
+        <li role="presentation"><a href="generate_ipsum"> Lorem Ipsum</a></li>
+        <li role="presentation"><a href="generate_users"> Test Users</a></li>
+        <li role="presentation"><a href="#"> Password</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <div class="container">
+    <header>
 
-      <header>
+    </header>
 
-      </header>
+    <section>
+        {{-- Main page content will be yielded here --}}
+        @yield('content')
+    </section>
 
-      <section>
-          {{-- Main page content will be yielded here --}}
-          @yield('content')
-      </section>
+    <footer>
+    </footer>
 
-      <footer>
-      </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-      {{-- Yield any page specific JS files or anything else you might want at the end of the body --}}
-      @yield('body')
+    {{-- Yield any page specific JS files or anything else you might want at the end of the body --}}
+    @yield('body')
   </div>
+
 </body>
 </html>
