@@ -39,7 +39,12 @@ class IpsumController extends Controller
      */
     public function store(Request $request)
     {
-      //dump($request);
+      # Validation
+      $this->validate($request, [
+        'numParagraphs' => 'required|numeric|min:1|max:50',
+      ]);
+
+      # grab input
       $input = $request->input('numParagraphs');
       $generator = new \Badcow\LoremIpsum\Generator();
       $paragraphs = $generator->getParagraphs($input);

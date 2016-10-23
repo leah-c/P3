@@ -37,6 +37,11 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
+      # Validation
+      $this->validate($request, [
+        'numUsers' => 'required|numeric|min:1|max:99',
+      ]);
+
       //dump($request);
       $input = $request->input('numUsers');
       $faker = \Faker\Factory::create();
