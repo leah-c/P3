@@ -12,14 +12,17 @@
 */
 
 # Direct user to the Generator tools landing page using IpsumController
-Route::get('/', 'IndexController@index')->name('gen_home.index');
+#Route::get('/', 'IndexController@index')->name('gen_home.index');
+Route::get('/', function(){
+  return 'Hi there!';
+})->name('gen_home.index');
 
 # Direct user to the ipsum generator landing page using IpsumController
 Route::get('/generate_ipsum', 'IpsumController@index')->name('gen_ipsum.index');
 
 # Directs user to the confirmation page of the ipsum generator
 Route::post('/generate_ipsum', function () {
-    return 'Ipsum generated.';
+    return 'Ipsum generated..';
 });
 
 # Direct user to the user generator landing page using IpsumController
@@ -27,5 +30,5 @@ Route::get('/generate_users', 'UserController@index')->name('gen_user.index');
 
 # Directs user to the confirmation page of the random user generator
 Route::post('/generate_users', function () {
-    return 'Users generated.';
+    return 'Users generated..';
 });
