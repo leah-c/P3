@@ -15,7 +15,7 @@ class GeneratorIndexController extends Controller
      */
     public function index()
     {
-        //
+      return view('\layouts\gen_home');
     }
 
     /**
