@@ -26,6 +26,14 @@ such as a page specific stylesheets.
     <label>Number of Paragraphs: <input type = "text" name ="numParagraphs" placeholder="Number of Paragraphs (Max)" maxlength = "2"></label>
     <input type = "submit">
   </form>
+
+  @if($errors->get('numParagraphs'))
+    <ul>
+        @foreach($errors->get('numParagraphs') as $error)
+            <li>{{ $error }}</li>
+        @endforeach
+    </ul>
+@endif
 @endsection
 
 
