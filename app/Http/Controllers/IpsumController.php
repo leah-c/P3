@@ -38,7 +38,7 @@ class IpsumController extends Controller
      */
     public function store(Request $request)
     {
-        //
+      return 'IpsumController store...ipsum generated..';
     }
 
     /**
