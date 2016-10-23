@@ -3,7 +3,7 @@
 
 @section('title')
     Generate Lorem Ipsum Text
-@stop
+@endsection
 
 
 {{--
@@ -13,7 +13,7 @@ such as a page specific stylesheets.
 --}}
 @section('head')
     {{--<link href="/css/books/show.css" type='text/css' rel='stylesheet'>--}}
-@stop
+@endsection
 
 
 @section('content')
@@ -26,7 +26,7 @@ such as a page specific stylesheets.
     <label>Number of Paragraphs: <input type = "text" name ="num paragraphs"></label>
     <input type = "submit">
   </form>
-@stop
+@endsection
 
 
 {{--
@@ -36,4 +36,4 @@ such as a page specific JavaScript files.
 --}}
 @section('body')
     <script src="/js/books/show.js"></script>
-@stop
+@endsection

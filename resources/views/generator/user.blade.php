@@ -3,7 +3,7 @@
 
 @section('title')
     Generate Random Users
-@stop
+@endsection
 
 
 {{--
@@ -13,7 +13,7 @@ such as a page specific stylesheets.
 --}}
 @section('head')
     {{--<link href="/css/books/show.css" type='text/css' rel='stylesheet'>--}}
-@stop
+@endsection
 
 
 @section('content')
@@ -27,7 +27,7 @@ such as a page specific stylesheets.
       <input type = "submit">
     </form>
 
-@stop
+@endsection
 
 {{--
 This `body` section will be yielded right before the closing </body> tag.
@@ -36,4 +36,4 @@ such as a page specific JavaScript files.
 --}}
 @section('body')
     <script src="/js/books/show.js"></script>
-@stop
+@endsection

@@ -3,7 +3,7 @@
 
 @section('title')
     Web Dev Generator Tools Home
-@stop
+@endsection
 
 
 {{--
@@ -13,7 +13,7 @@ such as a page specific stylesheets.
 --}}
 @section('head')
 
-@stop
+@endsection
 
 
 @section('content')
@@ -89,7 +89,7 @@ such as a page specific stylesheets.
   </ul>
 
 
-@stop
+@endsection
 
 {{--
 This `body` section will be yielded right before the closing </body> tag.
@@ -98,4 +98,4 @@ such as a page specific JavaScript files.
 --}}
 @section('body')
     <script src="/js/books/show.js"></script>
-@stop
+@endsection
