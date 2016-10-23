@@ -15,7 +15,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        return 'Hi from the UserController!!';
+        //return 'Hi from the UserController!!';
+        return view('\layouts\gen_user');
     }
 
     /**
