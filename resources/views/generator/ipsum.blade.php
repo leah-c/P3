@@ -34,6 +34,7 @@ such as a page specific stylesheets.
         @endforeach
     </ul>
   @endif
+
 @endsection
 
 
@@ -43,5 +44,5 @@ Use it to add specific things that *this* View needs at the end of the body,
 such as a page specific JavaScript files.
 --}}
 @section('body')
-    <script src="/js/books/show.js"></script>
+
 @endsection

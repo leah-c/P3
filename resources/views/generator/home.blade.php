@@ -73,7 +73,6 @@ such as a page specific stylesheets.
     <li>
       <ul><h1>Aesthetics</h1>
         <li>[   ] Make forms look pretty </li>
-        <li>[   ] Make forms look pretty </li>
         <li>[   ] Add CSS to error messages </li>
         <li>[   ] Add padding between container and fixed navbar </li>
         <li>[   ] Highlight active links, might need to pass param </li>
@@ -101,5 +100,4 @@ Use it to add specific things that *this* View needs at the end of the body,
 such as a page specific JavaScript files.
 --}}
 @section('body')
-    <script src="/js/books/show.js"></script>
 @endsection
