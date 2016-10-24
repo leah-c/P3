@@ -42,13 +42,16 @@ class UserController extends Controller
         'numUsers' => 'required|numeric|min:1|max:99',
       ]);
 
-      //dump($request);
+      #generate users
       $input = $request->input('numUsers');
       $faker = \Faker\Factory::create();
 
-      for ($i=0; $i < $input; $i++) {
-        echo $faker->name, "</br>";
+      $users ="";
+     for ($i=0; $i < $input; $i++) {
+        $users .= $faker->name . "\n";
       }
+
+      return view('generator.user_confirm')->with('users', $users);
     }
 
     /**
