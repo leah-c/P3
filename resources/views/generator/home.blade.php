@@ -30,68 +30,6 @@ such as a page specific stylesheets.
   <p>The Random User Generator tool will give you some dummy user names (i.e. Lisa Frank).</p>
   <a href ="generate_users"><input type="button" value="Let's get some random user names!"></a>
 
-  <ul><h2>TO DOs</h2>
-    <li>
-      <ul><h1>Ipsum Generator</h1>
-        <li>[ x ] Create blurb for ipsum generator</li>
-        <li>[   ] Determine how to display results from ipsum generator </li>
-        <li>[ x ] Create link to ipsum generator from home page</li>
-        <li>[ x ] Install ipsum generator package </li>
-      </ul>
-    </li>
-
-    <li>
-      <ul><h1>User Generator</h1>
-        <li>[ x ] Create blurb for random user generator</li>
-        <li>[ x ] Create link to user generator from home page</li>
-        <li>[   ] Determine how to display results from user generator </li>
-        <li>[ x ] Install random user generator package </li>
-      </ul>
-    </li>
-
-    <li>
-      <ul><h1>Validation/ Error Messages</h1>
-        <li>[ x ] Test link to user generator </li>
-        <li>[ x ] Create Laravel Validation rules for user generator </li>
-        <li>[   ] Customize error messages for user generator </li>
-        <li>[ x ] Test random user generator package </li>
-
-        <li>[ x ] Test link to ipsum generator </li>
-        <li>[ x ] Create Laravel Validation rules for ipsum generator </li>
-        <li>[   ] Customize error messages for ipsum generator </li>
-        <li>[ x ] Test ipsum generator package </li>
-      </ul>
-    </li>
-
-    <li>
-      <ul><h1>Structure</h1>
-        <li>[ x ] Create form for ipsum generator </li>
-        <li>[ x ] Create form for user generator </li>
-      </ul>
-    </li>
-
-    <li>
-      <ul><h1>Aesthetics</h1>
-        <li>[   ] Make forms look pretty </li>
-        <li>[   ] Add CSS to error messages </li>
-        <li>[   ] Add padding between container and fixed navbar </li>
-        <li>[   ] Highlight active links, might need to pass param </li>
-
-      </ul>
-    </li>
-
-    <li>
-      <ul><h1>Extras</h1>
-        <li>[   ] Incorporate password generator from P2 </li>
-        <li>[   ] Create link to password generator on home page</li>
-        <li>[   ] Determine how to display results from password generator </li>
-        <li>[   ] Create a clipboard function for easier copying </li>
-
-      </ul>
-    </li>
-  </ul>
-
-
 @endsection
 
 {{--
