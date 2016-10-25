@@ -24,4 +24,4 @@ Route::post('/generate_ipsum', 'IpsumController@store')->name('gen_ipsum.store')
 Route::get('/generate_users', 'UserController@index')->name('gen_user.index');
 
 # Directs user to the confirmation page of the random user generator
-Route::post('/generate_users', 'UserController@store')->name('gen_user.store');
+Route::post('/generate_users', 'UserController@create')->name('gen_user.create');
