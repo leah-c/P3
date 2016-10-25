@@ -20,7 +20,9 @@ such as a page specific stylesheets.
   <br><br>
   <h1>Here's your Lorem Ipsum text!</h1>
 
-  {{$text}}
+  @foreach( $paragraphs as $value )
+     Value is {{$value}} <br/>
+  @endforeach
 
 
 @endsection
