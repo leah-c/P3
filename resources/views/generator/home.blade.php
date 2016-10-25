@@ -19,8 +19,7 @@ such as a page specific stylesheets.
 @section('content')
 
   <h1>Developer's Best Friend</h1>
-  <p>Look no further if you're looking for text to fill up blank space or need test user data!</p>
-
+  <p>Look no further if you're looking for text to fill up blank space or need test user data! Use one of the handy data generators below!</p>
   <h2>Lorem Ipsum Text Generator</h2>
   <p>The Lorem Ipsum Text Generator tool will give you some dummy filler text. </p>
   <a href ="generate_ipsum"><input type="button" value="Let's generate some Lorem Ipsum text!"></a>

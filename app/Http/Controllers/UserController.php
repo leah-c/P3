@@ -40,7 +40,8 @@ class UserController extends Controller
        $salaries['qadir'] = "medium";
        $salaries['zara'] = "low";
        */
-     for ($i=0; $i < $input; $i++) {
+
+      for ($i=0; $i < $input; $i++) {
         $users[] .= $faker->name;
       }
 
