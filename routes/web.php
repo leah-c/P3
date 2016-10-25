@@ -18,7 +18,7 @@ Route::get('/', 'GeneratorIndexController@index')->name('gen_home.index');
 Route::get('/generate_ipsum', 'IpsumController@index')->name('gen_ipsum.index');
 
 # Directs user to the confirmation page of the ipsum generator
-Route::post('/generate_ipsum', 'IpsumController@store')->name('gen_ipsum.store');
+Route::post('/generate_ipsum', 'IpsumController@create')->name('gen_ipsum.create');
 
 # Direct user to the user generator landing page using IpsumController
 Route::get('/generate_users', 'UserController@index')->name('gen_user.index');
