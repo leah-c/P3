@@ -12,23 +12,11 @@
 
     <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" >
 
-
     {{-- Yield any page specific CSS files or anything else you might want in the <head> --}}
     @yield('head')
 
 </head>
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-
-      <ul class="nav nav-pills">
-        <li class="active"><a href="/">Home</a></li>
-        <li role="presentation"><a href="generate_ipsum"> Lorem Ipsum</a></li>
-        <li role="presentation"><a href="generate_users"> Test Users</a></li>
-        <li role="presentation"><a href="#"> Password</a></li>
-      </ul>
-    </div>
-  </nav>
 
   <div class="container">
     <header>

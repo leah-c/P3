@@ -2,7 +2,7 @@
 
 
 @section('title')
-    Web Dev Generator Tools Home
+    Developer's Best Friend
 @endsection
 
 
@@ -22,13 +22,12 @@ such as a page specific stylesheets.
   <p>Look no further if you're looking for text to fill up blank space or need test user data!</p>
 
   <h2>Lorem Ipsum Text Generator</h2>
-  <p>The Lorem Ipsum Text Generator tool will give you some dummy text. Just enter the
-  number of paragraphs of text you'd like to have!</p>
-  <a href ="generate_ipsum"><input type="button" value="Let's generate some lorem ipsum text!"></a>
+  <p>The Lorem Ipsum Text Generator tool will give you some dummy filler text. </p>
+  <a href ="generate_ipsum"><input type="button" value="Let's generate some Lorem Ipsum text!"></a>
 
-  <h2>Random user Generator</h2>
-  <p>The Random User Generator tool will give you some dummy user names (i.e. Lisa Frank).</p>
-  <a href ="generate_users"><input type="button" value="Let's get some random user names!"></a>
+  <h2>Random User Generator</h2>
+  <p>The Random User Generator tool will give you some dummy user names.</p>
+  <a href ="generate_users"><input type="button" value="Let's generate some random users!"></a>
 
 @endsection
 

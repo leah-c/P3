@@ -17,9 +17,11 @@ such as a page specific stylesheets.
 
 
 @section('content')
+  <a href="/">Home Page</a>
 
-  <h1>You are on the Random User Generator landing page.</h1>
+  <h1>Random User Generator</h1>
   <p>The Random User Generator tool will give you some dummy user names (i.e. Lisa Frank).</p>
+  <p>Just enter the number of users you'd like to have.</p>
 
     <form method = "POST" action = "/generate_users" >
       {{ csrf_field() }}

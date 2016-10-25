@@ -17,7 +17,7 @@ such as a page specific stylesheets.
 
 
 @section('content')
-
+  <a href="/">Home Page</a>
   <h1>Here's your Lorem Ipsum text!</h1>
 
   @foreach( $paragraphs as $value )

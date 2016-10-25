@@ -18,7 +18,10 @@ such as a page specific stylesheets.
 
 
 @section('content')
-  <h1>You are on the Lorem Ipsum Generator landing page.</h1>
+
+  <a href="/">Home Page</a>
+
+  <h1>Lorem Ipsum Generator</h1>
   <p>The Lorem Ipsum Text Generator tool will give you some dummy text. Just enter the
   number of paragraphs of text you'd like to have!</p>
 

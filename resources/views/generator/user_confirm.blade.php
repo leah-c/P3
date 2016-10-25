@@ -17,7 +17,8 @@ such as a page specific stylesheets.
 
 
 @section('content')
-  <br><br>
+  <a href="/">Home Page</a>
+
   <h1>Here's a list of users!</h1>
 
   @foreach( $users as $name )
