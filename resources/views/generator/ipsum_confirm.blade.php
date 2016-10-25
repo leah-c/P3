@@ -12,16 +12,16 @@ Use it to add specific things that *this* View needs in the head,
 such as a page specific stylesheets.
 --}}
 @section('head')
-    {{--<link href="/css/books/show.css" type='text/css' rel='stylesheet'>--}}
+
 @endsection
 
 
 @section('content')
-  <br><br>
+
   <h1>Here's your Lorem Ipsum text!</h1>
 
   @foreach( $paragraphs as $value )
-     Value is {{$value}} <br/>
+     <p>{{$value}}</p>
   @endforeach
 
 
