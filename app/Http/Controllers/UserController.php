@@ -45,13 +45,19 @@ class UserController extends Controller
       #generate users
       $input = $request->input('numUsers');
       $faker = \Faker\Factory::create();
+      $users = array();
 
-      $users ="";
+      /* Second method to create array. */
+/*       $salaries['mohammad'] = "high";
+       $salaries['qadir'] = "medium";
+       $salaries['zara'] = "low";
+       */
      for ($i=0; $i < $input; $i++) {
-        $users .= $faker->name . "\n";
+        $users[] .= $faker->name;
       }
 
-      return view('generator.user_confirm')->with('users', $users);
+      return view('generator.user_confirm')->with(compact('users'));
+
     }
 
     /**
