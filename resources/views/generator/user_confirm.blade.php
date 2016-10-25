@@ -20,7 +20,9 @@ such as a page specific stylesheets.
   <br><br>
   <h1>Here's a list of users!</h1>
 
-  {{$users}}
+  @foreach( $users as $name )
+     <p>{{$name}}</p>
+  @endforeach
 
 
 @endsection
