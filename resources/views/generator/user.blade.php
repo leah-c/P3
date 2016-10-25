@@ -2,7 +2,7 @@
 
 
 @section('title')
-    Generate Random Users
+  Random User Generator
 @endsection
 
 
