@@ -47,9 +47,7 @@ class IpsumController extends Controller
       $generator = new \Badcow\LoremIpsum\Generator();
       $paragraphs = $generator->getParagraphs($input);
 
-      $display_text = implode(' <p> ', $paragraphs);
-
-      return view('generator.ipsum_confirm')->with('text', $display_text);
+      return view('generator.ipsum_confirm')->with(compact('paragraphs'));
     }
 
     /**
