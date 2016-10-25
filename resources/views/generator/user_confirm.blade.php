@@ -2,7 +2,7 @@
 
 
 @section('title')
-    Generate Lorem Ipsum Text
+  Random User Generator
 @endsection
 
 
