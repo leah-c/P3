@@ -18,18 +18,16 @@ such as a page specific stylesheets.
 
 @section('content')
 
-  <section>
-    <p>Look no further if you're looking for text to fill up blank space or need test user data! Use one of the handy data generators below!</p>
-    <h2>Lorem Ipsum Text Generator</h2>
-    <p>The Lorem Ipsum Text Generator tool will give you some dummy filler text. </p>
-    <a href ="generate_ipsum">Let's generate some Lorem Ipsum text!</a>
-  </section>
+  <p>Look no further if you're looking for text to fill up blank space or need test user data! Use one of the handy data generators below!</p>
+  <h2>Lorem Ipsum Text Generator</h2>
+  <p>The Lorem Ipsum Text Generator tool will give you some dummy filler text. </p>
+  <a href ="generate_ipsum">Let's generate some Lorem Ipsum text!</a>
 
-  <section>
-    <h2>Random User Generator</h2>
-    <p>The Random User Generator tool will give you some dummy user names.</p>
-    <a href ="generate_users">Let's generate some random users!</a>
-  </section>
+
+  <h2>Random User Generator</h2>
+  <p>The Random User Generator tool will give you some dummy user names.</p>
+  <a href ="generate_users">Let's generate some random users!</a>
+
 
 @endsection
 
