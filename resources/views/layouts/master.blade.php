@@ -12,6 +12,7 @@
 
     <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" >
 
+    <link href="/css/style.css" type='text/css' rel='stylesheet'>
     {{-- Yield any page specific CSS files or anything else you might want in the <head> --}}
     @yield('head')
 
