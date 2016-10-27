@@ -20,7 +20,7 @@ such as a page specific stylesheets.
   <a href="/">Home Page</a>
 
   <h1>Here's a list of  users!</h1>
-  <p class="confirm_msg"> {{$numUsers}} user names and/or profiles were created.</p>
+  <p class="confirm_msg"> {{$numUsers}} user name(s) and/or profile(s) were created.</p>
 
   @foreach( $users as $value )
      <p>{{$value}}</p>

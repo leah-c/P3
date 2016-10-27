@@ -19,7 +19,7 @@ such as a page specific stylesheets.
 @section('content')
   <a href="/">Home Page</a>
   <h1>Here's Your Lorem Ipsum Text!</h1>
-  <p class="confirm_msg"> {{$numParagraphs}} paragraphs of Lorum Ipsum text were created.</p>
+  <p class="confirm_msg"> {{$numParagraphs}} paragraph(s) of Lorum Ipsum text were created.</p>
 
   @foreach( $paragraphs as $value )
      <p>{{$value}}</p>
