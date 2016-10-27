@@ -19,13 +19,12 @@ such as a page specific stylesheets.
 @section('content')
   <a href="/">Home Page</a>
 
-  <h1>Here's a list of users!</h1>
+  <h1>Here's a list of  users!</h1>
+  <p class="confirm_msg"> {{$numUsers}} user names and/or profiles were created.</p>
 
-
-  @foreach( $users as $name )
-     <p>{{$name}}</p>
+  @foreach( $users as $value )
+     <p>{{$value}}</p>
   @endforeach
-
 
 @endsection
 

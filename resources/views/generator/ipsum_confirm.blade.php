@@ -18,12 +18,12 @@ such as a page specific stylesheets.
 
 @section('content')
   <a href="/">Home Page</a>
-  <h1>Here's your Lorem Ipsum text!</h1>
+  <h1>Here's Your Lorem Ipsum Text!</h1>
+  <p class="confirm_msg"> {{$numParagraphs}} paragraphs of Lorum Ipsum text were created.</p>
 
   @foreach( $paragraphs as $value )
      <p>{{$value}}</p>
   @endforeach
-
 
 @endsection
 
