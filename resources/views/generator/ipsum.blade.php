@@ -31,7 +31,7 @@ such as a page specific stylesheets.
   </form>
 
   @if($errors->get('numParagraphs'))
-    <ul>
+    <ul class ="error_list">
         @foreach($errors->get('numParagraphs') as $error)
             <li>{{ $error }}</li>
         @endforeach

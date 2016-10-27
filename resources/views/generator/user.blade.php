@@ -30,7 +30,7 @@ such as a page specific stylesheets.
     </form>
 
     @if($errors->get('numUsers'))
-      <ul>
+      <ul class ="error_list">
           @foreach($errors->get('numUsers') as $error)
               <li>{{ $error }}</li>
           @endforeach
