@@ -9,21 +9,26 @@ use App\Http\Requests;
 class DEVBFF extends Controller
 {
 
+  # return the home view to users, shows all tools
   public function home()
   {
     return view('generator.home');
   }
 
+  # return the ipsum generator landing page view to users
   public function ipsumHome()
   {
       return view('generator.ipsum');
   }
 
+  # return the random user generator landing page view to users
   public function userHome()
   {
       return view('generator.user');
   }
 
+  # creates ipsum filler text based on number of paragrphs user specifies
+  # returns an array of ipsum text  to the view
   public function createIpsum(Request $request)
   {
     # Validation
@@ -31,7 +36,7 @@ class DEVBFF extends Controller
       'numParagraphs' => 'required|numeric|min:1|max:50',
     ]);
 
-    # grab input
+    # generate paragraphs
     $input = $request->input('numParagraphs');
     $generator = new \Badcow\LoremIpsum\Generator();
     $paragraphs = $generator->getParagraphs($input);
@@ -39,6 +44,8 @@ class DEVBFF extends Controller
     return view('generator.ipsum_confirm')->with(compact('paragraphs'));
   }
 
+  # creates randomly generated users based on the number user specifies
+  # returns an array of users to the view
   public function createUsers(Request $request)
   {
     # Validation
