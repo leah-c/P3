@@ -21,7 +21,7 @@
 
   <div class="container">
     <header>
-      <h1>Developer's Best Friend</h1>
+      <h1 id="app_name">Developer's Best Friend</h1>
     </header>
 
     <section>
