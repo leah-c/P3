@@ -35,12 +35,6 @@ class UserController extends Controller
       $faker = \Faker\Factory::create();
       $users = array();
 
-      /* Second method to create array. */
-/*       $salaries['mohammad'] = "high";
-       $salaries['qadir'] = "medium";
-       $salaries['zara'] = "low";
-       */
-
       for ($i=0; $i < $input; $i++) {
         $users[] .= $faker->name;
       }
