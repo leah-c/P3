@@ -1,7 +1,7 @@
 # Project 3
 ### Description: Using the Laravel Framework and Blade templating language to create developer tools such as a random user generator and a Lorem Ipsum Text Generator.
 ### Live URL : http://p3.leah-c.xyz/
-### Screencast Demo: http://www.screencast.com/t/ln3pVP5q9F6
+### Screencast Demo: http://www.screencast.com/t/stJnKd8w1vb
 #### Resources:
 ##### 1. https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
 ##### 2. https://packagist.org/packages/badcow/lorem-ipsum
