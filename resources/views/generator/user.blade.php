@@ -28,8 +28,8 @@ such as a page specific stylesheets.
       <label>Number of Users: <input type = "text" name ="numUsers" placeholder=" ( Max 99 )" maxlength = "2"></label></br>
 
       <input type="checkbox" name="phone_num" value="phone_num" />Phone Number</br>
-      <input type="checkbox" name="address" value="address" />Address</br>
-      <input type="checkbox" name="blurb" value="blurb" />Small Profile Blurb</br></br>
+      <input type="checkbox" name="address" value="address" />Address<br/>
+      <input type="checkbox" name="blurb" value="blurb" />Small Profile Blurb<br/>
 
       <input type = "Submit">
 
