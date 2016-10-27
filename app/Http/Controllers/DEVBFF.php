@@ -37,14 +37,17 @@ class DEVBFF extends Controller
     ]);
 
     # generate paragraphs
-    $input = $request->input('numParagraphs');
+    $numParagraphs = $request->input('numParagraphs');
     $generator = new \Badcow\LoremIpsum\Generator();
-    $paragraphs = $generator->getParagraphs($input);
+    $paragraphs = $generator->getParagraphs($numParagraphs);
 
-    return view('generator.ipsum_confirm')->with(compact('paragraphs'));
+    return view('generator.ipsum_confirm')
+      ->with('numParagraphs', $numParagraphs)
+      ->with(compact('paragraphs'));
   }
 
   # creates randomly generated users based on the number user specifies
+  # add any extras
   # returns an array of users to the view
   public function createUsers(Request $request)
   {
@@ -53,16 +56,50 @@ class DEVBFF extends Controller
       'numUsers' => 'required|numeric|min:1|max:99',
     ]);
 
+    # var initialization
+    $addPhoneNum = false;
+    $addAddress = false;
+    $addBlurb = false;
+
+    # check to make sure choices are selected
+    if (isset( $_POST['phone_num'])) {
+        $addPhoneNum = true;
+    };
+
+    if (isset( $_POST['address'])) {
+        $addAddress = true;
+    };
+
+    if (isset( $_POST['blurb'])) {
+        $addBlurb = true;
+    };
+
     #generate users
-    $input = $request->input('numUsers');
+    $numUsers = $request->input('numUsers');
+
     $faker = \Faker\Factory::create();
     $users = array();
 
-    for ($i=0; $i < $input; $i++) {
-      $users[] .= $faker->name;
+    # for each user name created, check to see if other options where
+    # selected
+    for ($i=0; $i < $numUsers; $i++) {
+      $users['name'.$i] = $faker->name;
+
+      if($addPhoneNum){
+        $users['phone'.$i]= $faker->phonenumber;
+      }
+
+      if($addAddress){
+        $users['address'.$i] = $faker->Address;
+      }
+
+      if($addBlurb){
+        $users['blurb'.$i] = $faker->text;
+      }
     }
 
-    return view('generator.user_confirm')->with(compact('users'));
-
+    return view('generator.user_confirm')
+      ->with('numUsers', $numUsers)
+      ->with(compact('users'));
   }
 }
