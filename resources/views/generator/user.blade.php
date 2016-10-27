@@ -27,6 +27,14 @@ such as a page specific stylesheets.
       {{ csrf_field() }}
       <label>Number of Users: <input type = "text" name ="numUsers" placeholder=" ( Max 99 )" maxlength = "2"></label><br/>
 
+      @if($errors->get('numUsers'))
+        <ul class ="error_list">
+            @foreach($errors->get('numUsers') as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+      @endif
+
       <input type="checkbox" name="phone_num" value="phone_num" />Phone Number<br/>
       <input type="checkbox" name="address" value="address" />Address<br/>
       <input type="checkbox" name="blurb" value="blurb" />Small Profile Blurb<br/>
@@ -35,14 +43,15 @@ such as a page specific stylesheets.
 
     </form>
 
-    @if($errors->get('numUsers'))
+    {{--@if($errors->get('numUsers'))
       <ul class ="error_list">
           @foreach($errors->get('numUsers') as $error)
               <li>{{ $error }}</li>
           @endforeach
       </ul>
     @endif
-
+    --}}
+    
 @endsection
 
 {{--
